@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Collections;
 
 public class ArrayListTD {
     public static void main(String[] args) {
@@ -27,5 +27,8 @@ public class ArrayListTD {
 
         list.sort(String::compareTo);
         System.out.println(list);
+
+        list.sort(Collections.reverseOrder());
+        System.out.print(list);
     }
 }
